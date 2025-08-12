@@ -1,0 +1,23 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+*.egg-info/
+.build/
+dist/
+
+# Data/outputs
+data/
+outputs/
+*.parquet
+*.csv
+*.xlsx
+
+# IDE
+.vscode/
+.idea/
+
+!examples/*.xlsx
+

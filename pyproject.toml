@@ -1,0 +1,24 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rbc-keywords"
+version = "0.1.0"
+description = "Подсчет ключевых слов в русскоязычных новостях из Excel с лемматизацией"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name="Dmitrii Lin"}]
+dependencies = [
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "pymorphy2>=0.9",
+  "razdel>=0.5.0",
+  "typer>=0.12.0",
+  "tqdm>=4.65.0"
+]
+
+[project.scripts]
+rbc-keywords = "rbc_keywords.cli:app"
